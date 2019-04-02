@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gerenciador-fe-tarefas": {
+    "gerenciador-de-tarefas": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gerenciador-fe-tarefas",
+            "outputPath": "dist/gerenciador-de-tarefas",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -58,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gerenciador-fe-tarefas:build"
+            "browserTarget": "gerenciador-de-tarefas:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gerenciador-fe-tarefas:build:production"
+              "browserTarget": "gerenciador-de-tarefas:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gerenciador-fe-tarefas:build"
+            "browserTarget": "gerenciador-de-tarefas:build"
           }
         },
         "test": {
@@ -103,7 +104,7 @@
         }
       }
     },
-    "gerenciador-fe-tarefas-e2e": {
+    "gerenciador-de-tarefas-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gerenciador-fe-tarefas:serve"
+            "devServerTarget": "gerenciador-de-tarefas:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gerenciador-fe-tarefas:serve:production"
+              "devServerTarget": "gerenciador-de-tarefas:serve:production"
             }
           }
         },
@@ -132,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "gerenciador-fe-tarefas"
+  "defaultProject": "gerenciador-de-tarefas"
 }
