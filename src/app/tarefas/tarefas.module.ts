@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TarefaService } from './shared';
+import { TarefaService, TarefaConcluidaDirective } from './shared';
 import { ListarTarefaComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
 import { RouterModule } from '@angular/router';
@@ -12,6 +12,7 @@ import { EditarTarefaComponent } from './editar';
     ListarTarefaComponent,
     CadastrarTarefaComponent,
     EditarTarefaComponent,
+    TarefaConcluidaDirective,
   ],
   imports: [
     RouterModule,
