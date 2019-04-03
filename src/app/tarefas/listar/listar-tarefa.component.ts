@@ -42,14 +42,13 @@ export class ListarTarefaComponent implements OnInit {
       // usando o próprio utilitário definido acima de 'remover'
     }
   }
-/*
+
   alterarStatus(tarefa: Tarefa): void {
+    // como é checkbox e não link, não precisa do event.preventDefault
     if (confirm('Deseja alterar o status da tarefa "' + tarefa.nome + '"?')) {
       this.tarefaService.alterarStatus(tarefa.id);
+      // repopula após alteração
       this.tarefas = this.listarTodos();
     }
   }
-*/
-
-
 }
