@@ -14,7 +14,11 @@ export class ListarTarefaComponent implements OnInit {
   constructor(private tarefaService: TarefaService) {}
 
   ngOnInit() {        // se não tivesse essa tarefa o angular renderiza ela sem conteúdo para não quebrar o código
-  	this.tarefas = this.listarTodos();
+    this.tarefas = this.listarTodos();
+    this.tarefas = [
+      new Tarefa(1, "Tarefa1", false),
+      new Tarefa(2, "Tarefa2", true),
+    ]
   }
 
   
