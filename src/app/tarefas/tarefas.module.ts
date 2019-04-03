@@ -4,6 +4,7 @@ import { TarefaService } from './shared';
 import { ListarTarefaComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     RouterModule,
+    FormsModule,
     CommonModule,
   ],
   providers: [
