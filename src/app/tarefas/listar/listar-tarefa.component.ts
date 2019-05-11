@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { TarefaService, Tarefa } from '../shared';
 
-
-
 @Component({
   selector: 'app-listar-tarefa',
   templateUrl: './listar-tarefa.component.html',
@@ -22,13 +20,10 @@ export class ListarTarefaComponent implements OnInit {
 //      new Tarefa(2, "Tarefa2", true),
 //    ]
   }
-
   
   listarTodos(): Tarefa[] {                          // retorna uma lista de tarefas
   	return this.tarefaService.listarTodos();
   }
-
-
   
   remover($event: any, tarefa: Tarefa): void {
     // o $event é um objeto do javascript
